@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bullpen Scheduling</title>
+        <link rel="stylesheet" href="shared.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="firstVisitBackdrop">
+            <div id="firstVisitIntro">
+                <h1>Welcome to Bullpen Scheduling!</h1>
+                <p>On the top right you'll see the "Teams Setup" page.  On that page you can add/delete teams and add/delete regular volunteers.  A "regular" volunteer 
+                    is a volunteer who regularly volunteers for a particular team/service.  You'll find an "add regulars" button on the main page where you can add 
+                    all regular volunteers with one click.</p>
+                    <p>On the main page, you'll be able to add flex volunteers.  Adding or removing volunteers on this page does not add them to the regulars roster.</p>
+                    <p>Because this is your first time here, I've loaded some sample data for you.</p>
+                    <h2 id="warning">This application uses local storage!</h2>
+                    <p>This application uses local storage, which means that all teams data is saved to the local device.  If you update all of your teams and rosters on one device and go to use
+                        another device when volunteers show up, the new device will not know any of the teams or roster info.  If you clear your browser's cashe and temporary internet files, the device will forget
+                        all your teams data as well.  The benefit is that this application can be used 
+                        simultaneously on many devices without having to do any registration process.  
+                    </p>
+                    <p>If you run into any issues with the application, please contact Matt Bilyeu at matt.bilyeu1@gmail.com</p>
+                    <h1>Click anywhere to continue!</h1>
+            </div>
+        </div>
+        <div class="flexContainer">
+            <header>
+                <a href="index.html">Main Page</a>
+                <a href="setup/index.html">Teams Setup</a>
+            </header>
+            <main>
+                <div class="formContainer">
+                    <label>Name</label>
+                    <input type="text" id="inputName">
+                    <select id="team">
+                    </select>
+                    <button id="addPerson">Submit</button>
+                </div>
+                <div id="olArea">
+                </div>
+                <button id="addRegulars">Add Regulars</button>
+            </main>
+            <footer>
+                <div id="chooseService">
+                    <button id="firstService">First Service</button>
+                    <button id="secondService">Second Service</button>
+                </div>
+            </footer>
+        </div>
+        <script src="shared.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

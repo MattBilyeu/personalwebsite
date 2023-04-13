@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Roboto:ital,wght@0,400;0,900;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0;
+}
+
+body a,
+body a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(51, 181, 230);
+    margin: 0;
+    width: 100vw;
+    height: 2rem;
+    align-items: center;
+    color: white;
+}
+
+header a:hover,
+header a:active {
+    color: black;
+    border-bottom: thick solid black;
+    border-radius: 8px;
+}
+
+button {
+    background-color: rgb(51, 181, 230);
+    border-radius: 4px;
+    border: none;
+    color: white;
+}
+
+button:hover,
+button:active {
+    background-color: #0996cd;
+}
+
+.delete {
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(51, 181, 230);
+}
+
+#chooseService {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#chooseService button {
+    height: 3.5rem;
+    margin: 0 1rem;
+    font-size: 2rem;
+    background-color: grey;
+}
+
+#chooseService button:hover,
+#chooseService button:active {
+    background-color: green;
+    color: white;
+}
+
+.green {
+    background-color: green !important;
+    color: white;
+}
+
+ol {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 0 0 0;
+    border-top: dotted grey;
+}
+
+ol label {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+ol input {
+    width: 2rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+.formContainer {
+    display: grid;
+    grid-template-columns: 4rem repeat(3, auto);
+    grid-template-rows: 1rem 1rem;
+    grid-gap: 0.4rem;
+    height: 2rem;
+}
+
+.formContainer label,
+.formContainer input,
+.formContainer button,
+.formContainer select {
+    display: inline-block;
+}
+
+#olArea {
+    display: block;
+}
+
+#firstVisitBackdrop {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0,0.5);
+}
+
+#firstVisitIntro {
+    position: absolute;
+    width: 75%;
+    min-height: 50%;
+    left: 12.5%;
+    top: 15%;
+    background: white;
+    padding: 2rem;
+}
+
+.hide {
+    display: none !important;
+}

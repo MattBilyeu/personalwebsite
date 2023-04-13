@@ -1,0 +1,99 @@
+@font-face {
+	font-family: "tradewinds";
+	src:	url("./TradeWinds-Regular.ttf");
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	background-color: #22577a;
+	text-align: center;
+	height: 105px;
+	margin: 0px 0px 10px 0px;
+}
+
+@media screen and (min-width: 1086px) {
+	header {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	}
+}
+
+.headercell2 {
+	flex:3;
+}
+
+footer {
+	text-align: center;
+	font-size: small;
+	background-color: #22577a;
+	color: #eeeeef;
+	margin: auto 0px 0px 0px;
+}
+
+footer p {
+	margin: 0;
+}
+
+#title {
+	color: #d80322;
+	font-size: 60px;
+	font-family: "tradewinds", sans-serif;
+	margin: 0px 0px 0px 0px;
+	position: relative;
+	top: 45px;
+}
+
+@media screen and (max-width: 1085px) {
+	#title {
+	color: #d80322;
+	font-size: 45px;
+	font-family: sans-serif;
+	margin: 0px 0px 0px 0px;
+	position: relative;
+	top: 20px;
+	}
+	header {
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	}
+}
+
+.imageheaders	{
+	width: 350px;
+}
+
+body {
+	color: #22577a;
+	background-color: #eeeeef;
+	line-height: 1.4em;
+	font-family: sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	margin: 10px;
+	justify-content: center;
+}
+
+.container div {
+	border: thick solid #4c151b outset;
+	margin: 10px;
+	border-radius: 30px;
+	padding: 20px;
+	background-color: #22577a;
+	color: #4c151b;
+	width: 350px;
+}
+
+#promoPhoto img {
+	border-radius: 30px;
+}
