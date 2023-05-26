@@ -147,3 +147,57 @@ ol input {
 .hide {
     display: none !important;
 }
+
+.returnButton {
+    background-color: #556B2F;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    position: absolute;
+    top: 0.5rem;
+    left: 30%;
+}
+
+.returnButton:hover,
+.returnButton:active {
+    filter: brightness(85%);
+    color: white;
+    border-bottom: none;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 400px) {
+    html,
+    body {
+        width: auto;
+    }
+
+    main {
+        width: auto;
+        margin: 1rem 0;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+        margin-top: 4rem;
+        width: auto;
+        row-gap: 0.5rem;
+    }
+
+    footer {
+        position: static;
+        height: auto;
+    }
+
+    #chooseService {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+
+    #chooseService button {
+        height: auto;
+    }
+}
