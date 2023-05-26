@@ -195,9 +195,14 @@ ol input {
         margin-top: 1rem;
         margin-bottom: 0;
         padding: 1rem;
+        height: auto;
     }
 
     #chooseService button {
         height: auto;
+    }
+
+    .formContainer {
+        grid-template-columns: 3rem repeat(3, auto);
     }
 }
