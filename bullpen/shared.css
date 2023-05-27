@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: space-around;
     background-color:rgb(51, 181, 230);
-    margin: 0;
+    margin: 5rem 0 0 0;
     width: 100vw;
     height: 4.25rem;
     align-items: center;
@@ -155,7 +155,6 @@ ol input {
     border-radius: 15px;
     position: absolute;
     top: 0.5rem;
-    left: 30%;
 }
 
 .returnButton:hover,
@@ -188,6 +187,10 @@ ol input {
 
     footer {
         position: static;
+        height: auto;
+    }
+
+    footer button {
         height: auto;
     }
 
