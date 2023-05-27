@@ -73,10 +73,11 @@ footer {
 }
 
 #chooseService button {
-    height: 3.5rem;
+    height: auto;
     margin: 0 1rem;
     font-size: 2rem;
     background-color: grey;
+    padding: 0.5rem;
 }
 
 #chooseService button:hover,
