@@ -91,7 +91,7 @@ main {
 }
 
 .videoBackdrop {
-	/* display: none; */
+	display: none;
 	position: fixed;
 	z-index: 1001;
 	width: 100%;
@@ -100,7 +100,7 @@ main {
 }
 
 .video {
-	/* display: none; */
+	display: none;
 	position: fixed;
 	top: 3rem;
 	left: calc(50% - 190px);
