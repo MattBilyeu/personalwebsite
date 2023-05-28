@@ -13,7 +13,7 @@
             <img src="../../images/bullpen.png" title="bullpen logo">
             <a href="index.html">Teams Setup</a>
         </header>
-        <main>
+        <div class="setupForm">
             <div class="formContainer">
                 <label>Name</label>
                 <input type="text" id="inputName">
@@ -26,14 +26,15 @@
             </div>
             <div id="olArea">
             </div>
-        </main>
+        </div class=setupForm>
+        <div id="chooseService">
+            <button id="firstService">First Service</button>
+            <button id="secondService">Second Service</button>
+        </div>
         <footer>
-            <div id="chooseService">
-                <button id="firstService">First Service</button>
-                <button id="secondService">Second Service</button>
-            </div>
+
+            <script src="../shared.js"></script>
+            <script src="setup.js"></script>
         </footer>
     </body>
-    <script src="../shared.js"></script>
-    <script src="setup.js"></script>
 </html>

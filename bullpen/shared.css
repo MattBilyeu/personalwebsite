@@ -15,11 +15,12 @@ body a:visited {
     color: inherit;
 }
 
-main {
+.setupForm {
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     width: 25rem;
+    display: block;
 }
 
 header {
@@ -55,40 +56,6 @@ button:active {
 .delete {
     margin-left: 15px;
     vertical-align: middle;
-}
-
-footer {
-    position: Absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(51, 181, 230);
-}
-
-#chooseService {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-#chooseService button {
-    height: auto;
-    margin: 0 1rem;
-    font-size: 2rem;
-    background-color: grey;
-    padding: 0.5rem;
-}
-
-#chooseService button:hover,
-#chooseService button:active {
-    background-color: green;
-    color: white;
-}
-
-.green {
-    background-color: green !important;
-    color: white;
 }
 
 ol {
@@ -145,8 +112,36 @@ ol input {
     padding: 2rem;
 }
 
+#chooseService {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1rem;
+    background-color:rgb(51, 181, 230)
+}
+
+#chooseService button {
+    height: auto;
+    margin: 0 1rem;
+    font-size: 2rem;
+    background-color: grey;
+    padding: 0.5rem;
+}
+
+#chooseService button:hover,
+#chooseService button:active {
+    background-color: green;
+    color: white;
+}
+
 .hide {
     display: none !important;
+}
+
+.green {
+    background-color: green !important;
+    color: white;
 }
 
 .returnButton {
@@ -172,7 +167,7 @@ ol input {
         width: auto;
     }
 
-    main {
+    .setupForm {
         width: auto;
         margin: 1rem 0;
     }
@@ -184,15 +179,6 @@ ol input {
         margin-top: 4rem;
         width: auto;
         row-gap: 0.5rem;
-    }
-
-    footer {
-        position: static;
-        height: auto;
-    }
-
-    footer button {
-        height: auto;
     }
 
     #chooseService {
