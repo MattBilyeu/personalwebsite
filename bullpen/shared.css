@@ -7,6 +7,9 @@
 body {
     font-family: "Roboto Condensed", sans-serif;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body a,
@@ -21,6 +24,7 @@ body a:visited {
     margin-right: auto;
     width: 25rem;
     display: block;
+    flex-grow: 1;
 }
 
 header {
@@ -118,7 +122,8 @@ ol input {
     justify-content: space-around;
     width: 100%;
     padding: 1rem;
-    background-color:rgb(51, 181, 230)
+    background-color:rgb(51, 181, 230);
+    margin-top: auto;
 }
 
 #chooseService button {
