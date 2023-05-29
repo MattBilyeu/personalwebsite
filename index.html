@@ -6,8 +6,19 @@
 	</head>
 	<body>
 		<div class="videoBackdrop">
-			<div playsinline autoplay class="video">
-				<video id="pitchVideo" controls src=""></video>
+			<div autoplay class="video">
+				<video id="teamManagerVideo" class="pitchVideo" controls>
+					<source id="sourceOne" src="video/teammanager.mp4" type="video/mp4">
+					<source id="sourceTwo" src="video/teammanager.webm" type="video/webm">
+					<source id="sourceThree" src="video/teammanager.wmv" type="video/wmv">
+					Video is not supported by your browser.
+				</video>
+				<video id="bullpenVideo" class="pitchVideo" controls>
+					<source id="sourceOne" src="video/bullpen.mp4" type="video/mp4">
+					<source id="sourceTwo" src="video/bullpen.webm" type="video/webm">
+					<source id="sourceThree" src="video/bullpen.wmv" type="video/wmv">
+					Video is not supported by your browser.
+				</video>
 			</div>
 		</div>
 		<div class="page">
@@ -97,7 +108,7 @@
 							</ol>
 						</div>
 						<div class="projectLinks">
-							<a href="#" id="video/teammanager.mp4" class="elevatorPitch">Video Summary</a>
+							<a href="#" id="teamManagerVideo" class="elevatorPitch">Video Summary</a>
 							<a href="https://teammgr.netlify.app/" class="projectLink">Project Site</a>
 							<a href="https://github.com/MattBilyeu/teammanager" class="gitHub">Github</a>
 						</div>
@@ -121,7 +132,7 @@
 							</ol>
 						</div>
 						<div class="projectLinks">
-							<a href="#" id="video/bullpen.mp4" class="elevatorPitch">Video Summary</a>
+							<a href="#" id="bullpenVideo" class="elevatorPitch">Video Summary</a>
 							<a href="bullpen/index.html" class="projectLink">Project Site</a>
 							<a href="https://github.com/MattBilyeu/bullpen" class="gitHub">Github</a>
 						</div>

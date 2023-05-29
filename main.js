@@ -1,3 +1,5 @@
+let chosenVideo = undefined;
+
 function init() {
     const videoButtons = document.querySelectorAll('.elevatorPitch');
     for (let i = 0; i < videoButtons.length; i++) {
@@ -14,13 +16,16 @@ function init() {
 function handleVideoButton(id) {
     const videoBackdrop = document.querySelector('.videoBackdrop');
     videoBackdrop.style.display = 'block';
-    const video = document.querySelector('#pitchVideo');
-    video.src = id;
+    chosenVideo = document.querySelector('#' + id);
+    chosenVideo.style.display = 'block';
 }
 
 function handleHideVideo() {
-    const video = document.querySelector('#pitchVideo');
-    video.src = "";
+    let videos = document.querySelectorAll('video');
+    for (let i = 0; i < videos.length; i++) {
+        videos[i].pause();
+    }
+    chosenVideo.style.display = 'none';
     const videoBackdrop = document.querySelector('.videoBackdrop');
     videoBackdrop.style.display = 'none';
 }
