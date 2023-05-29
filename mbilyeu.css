@@ -107,7 +107,7 @@ main {
 }
 
 .video {
-	position: fixed;
+	position: absolute;
 	top: 3rem;
 	left: calc(50% - 190px);
 	background-color: white;
