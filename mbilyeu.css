@@ -30,7 +30,9 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	row-gap: 1.5rem;
+	min-height: 377px;
 }
+
 
 #logoContainer {
 	animation: fadeIn 1s;
