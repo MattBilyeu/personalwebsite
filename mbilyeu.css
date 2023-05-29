@@ -113,12 +113,13 @@ main {
 	background-color: white;
 }
 
-#pitchVideo {
+.pitchVideo {
+	display: none;
 	padding: 1rem;
 	max-width: 350px;
 }
 
-#projectContainer {
+.projectContainer {
 	margin-bottom: 1rem;
 }
 
@@ -197,7 +198,7 @@ footer a:active {
 		left: calc(50% - 350px);
 	}
 
-	#pitchVideo {
+	.pitchVideo {
 		max-width: 700px;
 	}
 
