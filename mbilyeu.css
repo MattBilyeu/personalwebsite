@@ -7,6 +7,10 @@
 	src: url("BebasNeue-Book.ttf");
 }
 
+html {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 }
@@ -65,7 +69,7 @@ header {
 }
 
 #descriptionContainer li {
-	font-size: 2rem;
+	font-size: 1rem;
 	margin-bottom: 0.5rem;
 }
 
@@ -79,7 +83,6 @@ main {
 
 #skillContainer {
 	display: inline-block;
-	max-width: 870px;
 }
 
 #skills {
@@ -114,44 +117,29 @@ main {
 }
 
 #projectContainer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	padding: 5rem;
+	margin-bottom: 1rem;
 }
 
-.project {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	grid-template-rows: auto auto auto;
-	grid-template-areas:
-		"one one"
-		"two three"
-		"four four";
+.keyFeatures {
+	grid-area: three;
+	text-align: left;
+}
+
+.keyFeatures ol {
 	text-align: center;
-	width: 350px;
-	align-items: center;
-	padding: 1rem;
-	border: thin solid var(--primary-color);
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-	margin: 1rem;
+	margin: 0;
+	list-style-position: inside;
+	padding-left: 0;
 }
 
-.projectTitle {
-	grid-area: one;
-	border-bottom: solid var(--primary-color);
-}
-
-.projectTitle h1 {
-	margin: 0.5rem 0;
-}
-
-.projectDesc {
-	grid-area: two;
+.featuresTitle {
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
 }
 
 .projectLinks {
-	grid-area: four;
+	margin-top: 1rem;
 }
 
 .projectLinks a {
@@ -168,15 +156,6 @@ main {
 .projectLinks a:hover,
 .projectLinks a:active {
 	filter: brightness(85%);
-}
-
-.keyFeatures {
-	grid-area: three;
-}
-
-.featuresTitle {
-	font-weight: bold;
-	text-decoration: underline;
 }
 
 footer {
@@ -207,7 +186,7 @@ footer a:active {
 	100% {transform: translateY(-112.5px);}
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 750px) {
 	.video {
 		left: calc(50% - 350px);
 	}
@@ -215,4 +194,51 @@ footer a:active {
 	#pitchVideo {
 		max-width: 700px;
 	}
+
+	#descriptionContainer li {
+		font-size: 2rem;
+	}
+
+	#projectContainer {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		padding: 5rem;
+	}
+	
+	.project {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+			"one one"
+			"two three"
+			"four four";
+		text-align: center;
+		width: 350px;
+		align-items: center;
+		padding: 1rem;
+		border: thin solid var(--primary-color);
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+		margin: 1rem;
+	}
+	
+	.projectTitle {
+		grid-area: one;
+		border-bottom: solid var(--primary-color);
+	}
+	
+	.projectTitle h1 {
+		margin: 0.5rem 0;
+	}
+	
+	.projectDesc {
+		grid-area: two;
+	}
+	
+	.projectLinks {
+		grid-area: four;
+	}
+	
+
 }
