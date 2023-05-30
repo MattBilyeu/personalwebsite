@@ -108,14 +108,15 @@ main {
 }
 
 .video {
-	position: absolute;
-	top: 3rem;
 	background-color: white;
 	display: flex;
 	flex-direction: column;
 	column-gap: 1rem;
 	margin: 0 auto 0 auto;
 	justify-content: center;
+	text-align: center;
+	align-items: center;
+	width: 370px;
 }
 
 .pitchVideo {
@@ -208,6 +209,10 @@ footer a:active {
 }
 
 @media screen and (min-width: 750px) {
+	.video {
+		width: 750px;
+	}
+
 	.pitchVideo {
 		max-width: 700px;
 	}
