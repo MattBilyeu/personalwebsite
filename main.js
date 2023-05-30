@@ -7,8 +7,8 @@ function init() {
             handleVideoButton(videoButtons[i].id)
         })
     }
-    const videoBackdrop = document.querySelector('.videoBackdrop');
-    videoBackdrop.addEventListener('click', ()=> {
+    const closeVideo = document.querySelector('.close');
+    closeVideo.addEventListener('click', ()=> {
         handleHideVideo();
     })
 }
