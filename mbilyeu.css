@@ -238,6 +238,8 @@ footer a:active {
 		flex-wrap: wrap;
 		justify-content: space-evenly;
 		padding: 5rem;
+		background-image: url("images/projectbackdrop.png");
+		background-size: cover;
 	}
 	
 	.project {
@@ -255,6 +257,7 @@ footer a:active {
 		border: thin solid var(--primary-color);
 		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 		margin: 1rem;
+		background-color: white;
 	}
 	
 	.projectTitle {
