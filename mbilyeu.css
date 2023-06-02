@@ -147,7 +147,7 @@ main {
 }
 
 .projectContainer {
-	margin-bottom: 1rem;
+	padding-bottom: 1rem;
 }
 
 .projectTitle h1 {
@@ -197,7 +197,6 @@ footer {
 	padding: 0.3rem;
 	height: 2rem;
 	font-weight: bold;
-	margin-top: 1rem;
 }
 
 footer a,
