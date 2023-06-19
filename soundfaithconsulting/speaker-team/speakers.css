@@ -1,0 +1,93 @@
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.title {
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 2px 2px rgba(35,40,34,0.5);
+}
+
+.christianSpeaker {
+    padding-bottom: 2rem;
+}
+
+ul {
+    text-align: left;
+}
+
+.speakerDetails p {
+    padding: 0 1rem;
+}
+
+.bookButton a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    width: 25%;
+    box-shadow: 4px 4px 0 rgba(35,40,34,0.5);
+}
+
+.contactSpeakerBookButton {
+    margin-top: 2rem;
+}
+
+.bookButton a:hover,
+.bookButton a:active {
+    animation: removeBoxShadow 0.25s ease-in-out forwards;
+}
+
+@keyframes removeBoxShadow {
+    0% {
+        box-shadow: 4px 4px 0 rgba(35,40,34,0.5);
+    }
+    
+    100% {
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .christianSpeaker {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 'one two';
+        max-width: 750px;
+        padding-bottom: 1rem;
+        border-bottom: thin lightgrey dotted;
+        margin-bottom: 1rem;
+    }
+
+    .gridOne img {
+        grid-area: one;
+    }
+
+    .gridOne .speakerBio {
+        grid-area: two;
+    }
+
+    .gridTwo img {
+        grid-area: two;
+    }
+
+    .gridTwo .speakerBio {
+        grid-area: one;
+    }
+
+    .christianSpeaker:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .speakerBio {
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+    }
+}

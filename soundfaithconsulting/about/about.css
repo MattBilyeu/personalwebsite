@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh
+}
+
+main {
+    flex-grow: 1;
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.aboutChristianConsulting img {
+    width: 100%;
+}
+
+.aboutChristianConsulting div.text {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.slide img {
+    width: 375px;
+}
+
+.slide .caption {
+    width: 250px !important;
+}
+
+@media screen and (min-width: 750px) {
+    .aboutChristianConsulting {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'one two';
+        grid-column-gap: 1rem;
+    }
+
+    .aboutChristanConsulting img {
+        max-width: 650px;
+        grid-area: two;
+    }
+
+    .aboutChristianConsulting div {
+        grid-area: one;
+    }
+}

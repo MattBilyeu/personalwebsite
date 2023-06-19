@@ -1,0 +1,208 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.soundFaithConsultingLogo {
+    background-color: black;
+}
+
+.booking {
+    padding-bottom: 1rem;
+}
+
+a.bookButton {
+    display: block;
+    padding: 1rem;
+    color: black;
+    background-color: white;
+    width: 80%;
+    max-width: 332px;
+    margin: 1rem auto;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    box-shadow: 4px 4px 0 lightgrey;
+}
+
+a.bookButton:hover {
+    background-color: lightgrey;
+}
+
+.ministryConsultingReviews {
+    background-image: url('images/reviews/reviewBackground.png');
+    background-size: cover;
+    min-height: 450px;
+}
+
+.desktopReviews {
+    display: none;
+}
+
+.slide,
+.review {
+    width: 360px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: white;
+    color: var(--primary-color);
+    position: relative;
+    top: 2rem;
+}
+
+.slide img.reviewerImage,
+.review  img.reviewerImage {
+    border-radius: 50%;
+    position: relative;
+    top: 1rem;
+    width: 100px;
+}
+
+.recommends {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.recommends h3 {
+    margin: 0;
+}
+
+.recommends:children {
+    display: block;
+}
+
+.slide p,
+.review p {
+    width: 250px;
+}
+
+.slide a,
+.review a {
+    color: inherit
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+.welcome img {
+    max-width: 530px;
+}
+
+.welcome h1 {
+    margin-bottom: 0;
+}
+
+.welcome p {
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.welcome a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0 auto;
+    box-shadow: 4px 4px 0 grey
+}
+
+.welcome a:hover {
+    background-color: grey;
+}
+
+.aboutChristianMinistryConsulting,
+.aboutSoundFaithConsulting {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.aboutChristianMinistryConsulting div,
+.aboutSoundFaithConsulting div {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.aboutChristianMinistryConsulting div h1,
+.aboutSoundFaithConsulting div h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.aboutChristianMinistryConsulting div p,
+.aboutChristianMinistryConsulting div h1,
+.aboutSoundFaithConsulting div p,
+.aboutSoundFaithConsulting div h1 {
+    filter: brightness(85%);
+}
+
+.aboutSoundFaithConsulting {
+    background-color: white;
+    color: var(--primary-color)
+}
+
+@media screen and (min-width: 750px) {
+    .ministryConsultingReviews {
+        padding: 3rem;
+    }
+
+    .mobileReviews {
+        display: none
+    }
+
+    .desktopReviews {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    .review {
+        align-items: center;
+    }
+
+    .welcomeGridContainer {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: 'one two' 'one three' 'one four';
+        margin: auto 1rem;
+    }
+
+    .welcome img {
+        grid-area: one;
+    }
+
+    .welcome h2 {
+        grid-area: two;
+    }
+
+    .welcome p {
+        grid-area: three;
+    }
+
+    .welcome a {
+        grid-area: four;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%
+    }
+}

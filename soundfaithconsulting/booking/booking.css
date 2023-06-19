@@ -1,0 +1,67 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    flex-grow: 1;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form select {
+    width: 250px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+span {
+    width: 197px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+textarea {
+    width: 375px;
+    height: 200px;
+    margin-top: 1rem;
+}
+
+#send {
+    background-color: white;
+    color: var(--primary-color);
+    box-shadow: 4px 4px 0 grey;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#send:hover {
+    animation: buttonHover 0.5s ease-in-out forwards;
+}
+
+@keyframes buttonHover {
+    0% {
+        box-shadow: 4px 4px 0 grey;
+        background-color: white;
+        color: var(--primary-color);
+    }
+    100% {
+        box-shadow: none;
+        background-color: green;
+        color:white;
+    }
+}

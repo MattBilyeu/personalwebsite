@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+main {
+    background-color: white;
+    flex-grow: 1;
+}
+
+.callToAction {
+    background-image: url('../images/causes/causesHeader.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.callToAction p {
+    font-size: 2rem;
+    margin: 0.2rem 0;
+}
+
+.button {
+    color: var(--primary-color);
+    padding: 0.5rem;
+    width: 60%;
+    background-color: white;
+    box-shadow: 4px 4px 0 grey;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    animation: removeBoxShadow 0.25s ease-in-out forwards;
+}
+
+.photoGallery {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.photos {
+    display: flex;
+    width: 90%;
+    margin: 1rem auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0.5rem;
+    column-gap: 0.5rem;
+}
+
+.photos img {
+    width: 150px;
+}
+
+@keyframes removeBoxShadow {
+    0% {
+        box-shadow: 4px 4px 0 rgba(35,40,34,0.5);
+    }
+    
+    100% {
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .photos img {
+        width: auto;
+    }
+}
