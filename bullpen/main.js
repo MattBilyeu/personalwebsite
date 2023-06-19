@@ -9,17 +9,7 @@ const controller = {
         firstServiceButton.addEventListener('click', controller.handleService);
         let secondServiceButton = document.querySelector('#secondService');
         secondServiceButton.addEventListener('click', controller.handleService);
-        let notice = document.querySelector('#firstVisitIntro');
-        notice.addEventListener('click', controller.handleFirstVisit);
         view.initialSetup();
-        console.log(data.allTeams);
-    },
-    handleFirstVisit: function() {
-        data.firstVisit = false;
-        let introNotice = document.querySelector('#firstVisitIntro');
-        introNotice.classList.add('hide');
-        let firstVisitBackdrop = document.querySelector('#firstVisitBackdrop');
-        firstVisitBackdrop.classList.add('hide');
     },
     handleService: function (e) {
         if (e.target.id === 'firstService') {
