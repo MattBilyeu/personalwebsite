@@ -1,4 +1,4 @@
-const url = 'https://eofsz4bdce7swu.m.pipedream.net'
+const url = 'https://eoyn9ycu0q649st.m.pipedream.net'
 
 const submit = document.querySelector('#submit');
 
@@ -7,9 +7,9 @@ submit.addEventListener('click', ()=> {
 })
 
 const handleSubmit = function() {
-    const name = document.querySelector('#name');
-    const email = document.querySelector('#email');
-    const message = document.querySelector('#message');
+    const name = document.querySelector('#name').value;
+    const email = document.querySelector('#email').value;
+    const message = document.querySelector('#message').value;
     const data = {
         name: name,
         email: email,
